@@ -21,10 +21,29 @@ Voice commands can be triggered in a number of ways:
 
 The extension presently supports a number of command, with more in the works. If you have any additional suggestions, please get in touch!
 
+Note: parentheses in voice triggers represent optional words.
+
+E.g. opening a new tab, i.e. `(open) (new) tab` can be triggered by saying `tab`, `open tab`, `new tab`, or `open new tab`.
+
 Command | Voice Trigger
 --- | ---
-New tab | <ul><li>Tab</li><li>New tab</li><li>Open tab</li><li>Open new tab</li></ul>
+Open website in current tab | Go to [website]
+Google search in current tab | (Search for/Google) [query]
+Google Image search in current tab | (Search for/Google) pictures/images of [query]
+Open a website in a new tab | New tab (go to) [website]
+Google search in a new tab | New tab (search for/Google) [query]
+Google Image search in a new tab | New tab (search for/Google) pictures/images of [query]
+Open a new tab | (Open) (new) tab
+Refresh current tab | Refresh/reload (current) (tab)
+Duplicate current tab | Duplicate/copy (current) tab
+Close current tab | Close/exit (current) tab
+Exit all tabs/exit Chrome | Close all tabs/exit (Chrome)/close (Chrome)
+Go to Chrome settings/history/bookmarks/extensions/downloads/about | (Open) Chrome [query]
+Open extension settings | About (extension)/extension settings/extension options
 
+The `go to website` command supports the following websites:
+Facebook, Google, Twitter, Wikipedia, YouTube, Linkedin, StackOverflow, Outlook, Reddit, Gmail,
+Slashdot, GitHub, Slack, Amazon, Dribbble, Google Drive, Dropbox, Quora, Tumblr, Soundcloud, Spotify
 
 ## FAQ
 
