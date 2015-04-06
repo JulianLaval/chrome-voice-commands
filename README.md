@@ -27,10 +27,10 @@ E.g. opening a new tab, i.e. `(open) (new) tab` can be triggered by saying `tab`
 
 Command | Voice Trigger
 --- | ---
-Open website in current tab | Go to [website]
+Open website in current tab | Go to/open [website]
 Google search in current tab | (Search for/Google) [query]
 Google Image search in current tab | (Search for/Google) pictures/images of [query]
-Open a website in a new tab | New tab (go to) [website]
+Open a website in a new tab | New tab (go to/open) [website]
 Google search in a new tab | New tab (search for/Google) [query]
 Google Image search in a new tab | New tab (search for/Google) pictures/images of [query]
 Open a new tab | (Open) (new) tab
@@ -79,7 +79,7 @@ A frequently asked question, you say? :) If you feel that this extension is dese
 
 ## About
 
-**Chrome Voice Commands** | version 0.1.0
+**Chrome Voice Commands** | version 1.0.1
 
 (c) Julian Laval 2015 | [@JulianLaval](https://twitter.com/JulianLaval)
 

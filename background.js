@@ -3,10 +3,11 @@ var commands = {
     '(open) (new) tab': newTab,
     'new tab (search for) (google) pictures of *item': newTabImgSearch,
     'new tab (search for) (google) images of *item': newTabImgSearch,
-    'new tab (go to) (goto) *website': newTabWebsite,
+    'new tab (go to) (goto) (open) *website': newTabWebsite,
     'new tab (search for) (google) *search': newTabGoogleSearch,   
     'go to *website': goToWebsite,
     'goto *website': goToWebsite,
+    'open *website': goToWebsite,
     'reload (current) (tab)': reloadTab, // optimise group
     'refresh (current) (tab)': reloadTab, // optimise group
     'close (current) tab': closeTab, // optimise group
