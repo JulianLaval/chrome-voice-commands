@@ -9,7 +9,7 @@ Please note that this Google Chrome extension is in development, and as such may
 This software is free to use and modify under the MIT license.
 
 ## Usage
-This is extension is currently only available for Google Chrome, and can be downloaded directly from the [Chrome Web Store](https://chrome.google.com/webstore/category/apps). Additionally, you can also load the unpacked extension in Developer Mode.
+This is extension is currently only available for Google Chrome, and can be downloaded directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/chrome-voice-commands/oldilblokdgdcfifkoenidjfeapbhjkn). Additionally, you can also load the unpacked extension in Developer Mode.
 
 Voice commands can be triggered in a number of ways:
 

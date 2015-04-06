@@ -10,7 +10,7 @@ var enabledHotwording = document.getElementById('enable-hotwording');
 
 // check if annyang allowed
 function checkConnectivity(status){
-    enabledMicrophone.innerHTML = 'If you see the following message, please click on "Allow" to proceed (refresh if it hasn\'t appeared).<br /><img src="img/allow-mic.png" /><br /><br />If you\'ve explicitly denied permission, please <span class="content-btn" id="mic-button">Enable microphone</span>';
+    enabledMicrophone.innerHTML = 'If you see the following message, please click on "Allow" to proceed (refresh if it doesn\'t instantly appear).<br /><img src="img/allow-mic.png" /><br /><br />If you\'ve explicitly denied permission, please <span class="content-btn" id="mic-button">Enable microphone</span>';
     if(typeof status === "undefined"){
         annyang.start();
         annyang.abort();
@@ -18,7 +18,7 @@ function checkConnectivity(status){
     else {        
         if(status == "ok") enabledMicrophone.innerHTML = '<span class="content-btn" id="mic-button">Disable microphone</span>';
         else if(status == "error") enabledMicrophone.innerHTML = "No current network connectivity. Please ensure you have an Internet connection to proceed";
-        else enabledMicrophone.innerHTML = 'If you see the following message, please click on "Allow" to proceed (refresh if it hasn\'t appeared).<br /><img src="img/allow-mic.png" /><br /><br />If you\'ve explicitly denied permission, please <span class="content-btn" id="mic-button">Enable microphone</span>';
+        else enabledMicrophone.innerHTML = 'If you see the following message, please click on "Allow" to proceed (refresh if it doesn\'t instantly appear).<br /><img src="img/allow-mic.png" /><br /><br />If you\'ve explicitly denied permission, please <span class="content-btn" id="mic-button">Enable microphone</span>';
     }   
 }
 checkConnectivity();
