@@ -79,7 +79,7 @@ A frequently asked question, you say? :) If you feel that this extension is dese
 
 ## About
 
-**Chrome Voice Commands** | version 1.0.1
+**Chrome Voice Commands** | version 1.0.2
 
 (c) Julian Laval 2015 | [@JulianLaval](https://twitter.com/JulianLaval)
 
