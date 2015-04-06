@@ -47,9 +47,43 @@ Slashdot, GitHub, Slack, Amazon, Dribbble, Google Drive, Dropbox, Quora, Tumblr,
 
 ## FAQ
 
+#### Why do you need to access my microphone?
+
+This being a voice command extension, it only make sense that it be able to listen to your beautiful voice.
+
+#### Why can't I use the extension in a new tab or other `chrome://` URLs?
+
+Google Chrome offers extensions a default popup function which, although neat, unfortunately lacks versatility in how it can be triggered. This extension therefore relies instead on injecting a small amount of JavaScript and CSS directly into the active tab. Due to security concerns, Google Chrome does not allow code to be injected into its system tabs (e.g. new tab), and thus the extension will not work on those. As a rule of thumb, any URL based on `http://` or `https://` will work just fine.
+
+#### How do I know the microphone isn't always on and storing what I say?
+
+That's for me to know, and for you to find out! In all seriousness, however, Google Chrome does not indicate whether extensions are listening to you or not, which is a shame. As such, please feel free to go through the code yourself and make sure everything is ship-shape.
+
+That being said, please be aware that when hotwording is enabled, the extension will listen constantly for the keyphrase `"Ok Chrome"`. Everything else is ignored. Nothing is ever stored. This extension is merely an experiment; if you have any legitimate privacy concerns, please do not use it. If you find any vulnerabilities with the extension, please point them out ASAP.
+
+#### Are you affiliated with the NSA?
+
+No. (Maybe).
+
+#### How can I donate to this awesome project?
+
+A frequently asked question, you say? :) If you feel that this extension is deserving of you hard-earned money and would like me to continue with such shenanigans, please feel free to [donate via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=45HWRHYS6QZVW)!
+
 ## Roadmap
 
+* Finish support of `"Ok Chrome"` hotwording
+* Add support for multiple languages
+* Add support for more commands
+* Build plugins for browsers other than Google Chrome
+* Get acquired by Google for $1 trillion
+
 ## About
+
+**Chrome Voice Commands** | version 0.1.0
+
+(c) Julian Laval 2015 | [@JulianLaval](https://twitter.com/JulianLaval)
+
+None of this would have been possible without [Annyang](https://github.com/TalAter/annyang), a fantastic JavaScript speech recognition library authored by the awesome [@TalAter](https://twitter.com/TalAter).
 
 ## License
 This software is free to use under the [MIT](https://github.com/JulianLaval/chrome-voice-commands/blob/master/LICENSE) license.

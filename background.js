@@ -7,12 +7,12 @@ var commands = {
     'new tab (search for) (google) *search': newTabGoogleSearch,   
     'go to *website': goToWebsite,
     'goto *website': goToWebsite,
-    'reload (tab)': reloadTab,
-    'refresh (tab)': reloadTab,
-    'close (current) tab': closeTab,
-    'exit tab': closeTab,
-    'duplicate (tab)': copyTab,
-    'copy (tab)': copyTab,
+    'reload (current) (tab)': reloadTab, // optimise group
+    'refresh (current) (tab)': reloadTab, // optimise group
+    'close (current) tab': closeTab, // optimise group
+    'exit (current) tab': closeTab, // optimise group
+    'duplicate (current) tab': copyTab, // optimise group
+    'copy (current) tab': copyTab, // optimise group
     'close all tabs': closeChrome,
     'exit (chrome)': closeChrome,
     'close (chrome)': closeChrome,
