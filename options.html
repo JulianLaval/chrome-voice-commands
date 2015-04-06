@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chrome Voice Commands | Settings</title>
+        <link rel="stylesheet" type="text/css" href="options.css">       
+    </head>
+    <body>
+        <div id="header"><img src="img/browser-icon38-white.png" /><span id="header-title">Chrome Voice Commands<span>SETTINGS</span></span></div>
+        <h3>Hi there! Thanks for trying out the extension!</h3>
+        <ul id="options">
+            <li class="ind-option">
+                <div class="option-title">Microphone access</div>
+                <div class="option-outer">
+                    <div class="option-description">The extension needs access to your microphone to function</div>
+                    <div class="option-content" id="enable-microphone"><!--Please click on "Allow" to proceed.<br /><img src="img/allow-mic.png" />--></div>
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">Hotwording</div>
+                <div class="option-outer">
+                    <div class="option-description">Enable "Ok Chrome" to trigger a voice command. Coming soon!</div>
+                    <div class="option-content">
+                    <!--<span class="content-btn" id="enable-hotwording">Enable hotwording</span>-->
+                    </div>
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">Language</div>
+                <div class="option-outer">
+                    <div class="option-description">Only English at the moment. More coming soon!</div>
+                    <!--<div class="option-content"></div>-->
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">Donate</div>
+                <div class="option-outer">
+                    <div class="option-description">If you enjoy this extension, please consider donating. Thanks!</div>
+                    <div class="option-content">
+                        <a class="content-btn"  href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=45HWRHYS6QZVW" target="_blank">Donate via PayPal</a>
+                    </div>
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">Help</div>
+                <div class="option-outer">
+                    <div class="option-description">Bug? Feature request? Other miscellaneous questions? Get in touch!</div>
+                    <div class="option-content">
+                        <a class="content-btn" href="https://github.com/JulianLaval/chrome-voice-commands/issues" target="_blank">Report a bug</a>
+                        <a class="content-btn"  href="https://github.com/JulianLaval/chrome-voice-commands/issues" target="_blank">Request a feature</a>
+                        <a class="content-btn"  href="https://twitter.com/JulianLaval" target="_blank">Tweet me</a>
+                    </div>
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">FAQ</div>
+                <div class="option-outer">
+                    <div class="option-description">Have a question? it might be in the FAQ; if not, get in touch!</div>
+                    <div class="option-content">
+                        <ul class="questions">
+                            <li>
+                                <div class="ind-question">Why did you build this?</div>
+                                <div class="ind-answer">In its current state, Google Chrome only supports "voice searches" from new tabs and the Google.com homepage. Whilst that's already pretty cool,
+                                    I felt it'd be cooler to build a fully-fledged, Google Now-style voice command system, accessible from (almost) any webpage, and allowing for more than simply Googling what you ask it.</div>
+                            </li>
+                            <li>
+                                <div class="ind-question">Why do you need to access my microphone?</div>
+                                <div class="ind-answer">This being a voice command extension, it only make sense that it be able to listen to your beautiful voice.</div>
+                            </li>
+                            <li>
+                                <div class="ind-question">How do I trigger a voice command?</div>
+                                <div class="ind-answer">Voice commands can be triggered in a number of ways:
+                                    <ul>
+                                        <li>Firstly, you can click the <img src="img/browser-icon19.png" /> icon in your settings bar</li>
+                                        <li>More conveniently, a voice command can be triggered by the <span class="content-btn">Ctrl+Shift+F</span> combination</li>
+                                        <li>Finally, if hotwording is enabled, you can simple say "Ok Chrome" at any time to trigger the voice command prompt</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ind-question">What voice commands can I trigger?</div>
+                                <div class="ind-answer">An exhaustive list can be found on <a href="https://github.com/JulianLaval/chrome-voice-commands" target="_blank">GitHub</a>.</div>
+                            </li>
+                            <li>
+                                <div class="ind-question">Why can't I use the extension in a new tab or other 'chrome://' URLs?</div>
+                                <div class="ind-answer">Google Chrome offers extensions a default popup function which, although neat, unfortunately lacks versatility in how it can be triggered. This extension therefore relies
+                                    instead on injecting a small amount of JavaScript and CSS directly into the active tab. Due to security concerns, Google Chrome does not allow code to be injected into its system tabs (e.g. new tab), and thus
+                                    the extension will not work on those. As a rule of thumb, any URL based on 'http://'  or 'https://' will work just fine.</div>
+                            </li>
+                            <li>
+                                <div class="ind-question">How do I know the microphone isn't always on and storing what I say?</div>
+                                <div class="ind-answer">
+                                    <p>That's for me to know, and for you to find out! In all seriousness, however, Google Chrome does not indicate whether extensions are listening to you or not, which is a shame.
+                                    As such, I have released the extension's source code on <a href="https://github.com/JulianLaval/chrome-voice-commands" target="_blank">GitHub</a> so that you may go through it yourself and make sure everything is ship-shape.
+                                    Additionally, you can verify the code's legitimacy in your system's AppData folder.</p>
+                                    <p>That being said, please be aware that when hotwording is enabled, the extension will listen constantly for the keyphrase "Ok Chrome". Everything else is ignored. Nothing is ever stored.</p>
+                                    <p>This extension is merely an experiment; if you have any legitimate privacy concerns, please do not use it. If you find any vulnerabilities with the extension, please point them out ASAP.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ind-question">Are you affiliated with the NSA?</div>
+                                <div class="ind-answer">No. (Maybe).</div>
+                            </li>
+                            <li>
+                                <div class="ind-question">How can I donate to this awesome project?</div>
+                                <div class="ind-answer">A frequently asked question, you say? :) If you feel that this extension is deserving of you hard-earned money and would like me to continue with such shenanigans, please feel free to donate!</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="ind-option">
+                <div class="option-title">About</div>
+                <div class="option-outer">
+                    <div class="option-description">Chrome Voice Commands<br />
+                    Version 0.1.0<br />
+                    &copy; 2015 Julian Laval, <a href="https://twitter.com/JulianLaval" target="_blank">@JulianLaval</a><br /><br />
+                    Speech recognition powered by <a href="https://github.com/TalAter/annyang" target="_blank">Annyang</a>, authored by the awesome <a href="https://twitter.com/TalAter" target="_blank">@TalAter</a><br /><br />
+                    Source code: <a href="https://github.com/JulianLaval/chrome-voice-commands" target="_blank">https://github.com/JulianLaval/chrome-voice-commands</a><br />
+                    Developer website: <a href="http://julianlaval.com" target="_blank">http://julianlaval.com</a><br /><br />
+                    This software is licensed under <a href="https://github.com/JulianLaval/chrome-voice-commands/blob/master/LICENSE" target="_blank">MIT</a>.</div>
+                    <div class="option-content"></div>
+                </div>
+            </li>
+        </ul>
+        <script src="js/options.js"></script>
+    </body>
+</html>
+

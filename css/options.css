@@ -1,0 +1,129 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  color: #222;
+}
+#header {
+  color: #fff;
+  width: 100%;
+  background: #ff4444;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#header img {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+}
+#header span {
+  display: inline-block;
+}
+#header #header-title {
+  vertical-align: top;
+  font-size: 24px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+#header #header-title span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+h3 {
+  font-weight: 400;
+  margin: 30px 20px;
+}
+#options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#options .ind-option {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+#options .ind-option:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+}
+#options .ind-option:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#options .ind-option .option-title,
+#options .ind-option .option-outer {
+  float: left;
+}
+#options .ind-option .option-title {
+  width: 200px;
+  font-weight: 700;
+}
+#options .ind-option .option-outer {
+  font-weight: 400;
+  max-width: calc(100% - 200px);
+}
+#options .ind-option .option-outer .option-description {
+  color: #888;
+}
+#options .ind-option .option-outer .option-description a {
+  color: #555;
+  cursor: pointer;
+}
+#options .ind-option .option-outer .option-description a:hover {
+  color: #333;
+}
+#options .ind-option .option-outer .option-content {
+  margin-top: 15px;
+}
+#options .ind-option .option-outer .option-content a:not(.content-btn) {
+  color: #222;
+  cursor: pointer;
+}
+#options .ind-option .option-outer .option-content a:not(.content-btn):hover {
+  color: #000;
+}
+#options .ind-option .option-outer .option-content p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+#options .ind-option .option-outer .option-content .content-btn {
+  color: #222;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 1px solid #222;
+  margin-right: 5px;
+  background: transparent;
+  transition: all .3s ease;
+  cursor: pointer;
+  border-radius: 15px;
+}
+#options .ind-option .option-outer .option-content .content-btn:hover {
+  color: #fff;
+  background: #222;
+}
+#options .ind-option .option-outer .option-content .questions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#options .ind-option .option-outer .option-content .questions li {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+#options .ind-option .option-outer .option-content .questions li .ind-question {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#options .ind-option .option-outer .option-content .questions li .ind-answer .content-btn {
+  line-height: 1;
+  margin: 0;
+}
+#options .ind-option .option-outer .option-content .questions li .ind-answer ul li {
+  margin: 0;
+}

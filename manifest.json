@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Voice Commands",
+    "version": "0.1.0",
+    "description": "For the first time ever, enjoy the full power of voice commands on Google Chrome!",
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "img/browser-icon19.png",
+            "38": "img/browser-icon38.png"
+        },
+        "default_title": "Trigger voice command"
+    },
+    "author": "Julian Laval",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "commands": {
+        "trigger_popup": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F"
+            },
+            "description" : "Trigger voice command"
+        }
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "img/*.png"
+    ]
+}
